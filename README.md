@@ -1,18 +1,29 @@
 # DMart Sales Dashboard
 
-A Power BI dashboard project for analyzing DMart grocery sales performance, store trends, and category-wise revenue patterns.
+This repository contains a retail sales analytics dashboard built around DMart grocery order data. The project combines real-world sales records with a Power BI report to help analyze sales trends, category performance, regional variations, and profitability.
 
-## Overview
+## Project Overview
 
-This repository contains:
+The dataset includes transaction-level order records for grocery and retail categories such as:
 
-- A cleaned DMart sales dataset in the `Dataset/` folder
-- A Power BI report file: `Retail_Sales_Analytics.pbix`
-- Supporting documentation to understand the dataset and dashboard purpose
+- Food Grains
+- Fruits & Veggies
+- Beverages
+- Bakery
+- Oil & Masala
+- Snacks
+- Eggs, Meat & Fish
 
-The project is designed to help visualize key retail KPIs such as sales performance, category analysis, product trends, and store-level insights.
+The dashboard is designed to support business analysis around:
 
-## Repository Structure
+- total sales and profit trends
+- category-wise performance
+- sub-category contribution
+- region and city comparisons
+- discount vs. profit analysis
+- customer purchasing patterns
+
+## Repository Contents
 
 ```text
 DMart-Sales-Dashboard/
@@ -21,49 +32,80 @@ DMart-Sales-Dashboard/
 │   └── DMart_Grocery_Sales_-_Retail_Analytics_Dataset.csv
 ├── Retail_Sales_Analytics.pbix
 ├── README.md
-└── LICENSE (if added later)
+└── .gitignore
 ```
 
-## Dataset
+### Files
 
-The dataset contains DMart grocery sales information, including sales-related fields that can be used for:
+- `Retail_Sales_Analytics.pbix` — Power BI report/dashboard file
+- `Dataset/DMart.csv` — DMart sales dataset
+- `Dataset/DMart_Grocery_Sales_-_Retail_Analytics_Dataset.csv` — main retail analytics dataset used for sales analysis
 
-- Revenue analysis
-- Product/category performance tracking
-- Store-wise sales comparison
-- Trend analysis over time
-- Customer and market behavior insights
+## Dataset Schema
+
+The retail dataset contains the following columns:
+
+| Column | Description |
+| --- | --- |
+| Order ID | Unique order identifier |
+| Customer Name | Name of the customer |
+| Category | Main product category |
+| Sub Category | Specific product sub-category |
+| City | City where the order was placed |
+| Order Date | Date of purchase |
+| Region | Region classification (North, South, East, West, Central) |
+| Sales | Revenue generated from the order |
+| Discount | Discount percentage applied |
+| Profit | Profit earned from the order |
+| State | State associated with the order |
+
+The data appears to represent Indian retail transactions, predominantly from Tamil Nadu, with orders spanning several years and multiple regions.
+
+## Business Use Cases
+
+This repository can be used to answer questions such as:
+
+- Which category contributes the most revenue?
+- Which sub-category has the highest profit margin?
+- Which regions generate the strongest sales?
+- How do discounts influence profit?
+- Are sales increasing or declining over time?
+- Which cities or customer segments drive the most value?
 
 ## Dashboard Features
 
-The Power BI dashboard can be used to explore:
+The Power BI dashboard is intended to visualize:
 
-- Total sales and revenue trends
-- Category-wise sales contribution
-- Product performance insights
-- Store and regional comparison
-- Monthly/periodic sales patterns
+- revenue and profit trends over time
+- category and sub-category sales distribution
+- regional performance comparison
+- city-level sales insights
+- discount impact on profitability
+- top-selling product segments
 
 ## How to Use
 
-1. Open the `Retail_Sales_Analytics.pbix` file in Power BI Desktop.
-2. Ensure the dataset path is correctly mapped if the files are moved locally.
-3. Refresh the report if needed.
-4. Explore the visuals and metrics to analyze sales performance.
+1. Open `Retail_Sales_Analytics.pbix` in Power BI Desktop.
+2. Confirm the dataset file path points to the CSV data in the `Dataset/` folder.
+3. Refresh the data model if prompted.
+4. Use the dashboard visuals to explore sales, profit, and category performance.
+
+## Data Notes
+
+- The project is focused on grocery and retail sales analytics.
+- The data contains sales, discount, and profit fields, making it suitable for exploratory analysis and KPI reporting.
+- The dataset can be used for both descriptive analytics and dashboard-based storytelling.
 
 ## Requirements
 
 - Power BI Desktop
-- A local copy of the dataset files in the `Dataset/` folder
-
-## Purpose
-
-This project is intended for business analytics and dashboarding use cases, especially for understanding retail sales performance and generating actionable business insights from DMart grocery data.
+- CSV files from the `Dataset/` folder
+- Basic understanding of retail analytics/reporting concepts
 
 ## License
 
-This project does not currently include a license file. If you plan to share or distribute it publicly, consider adding an appropriate license.
+This repository does not currently include a license file. If you plan to publish or distribute it publicly, consider adding an appropriate open-source license.
 
 ## Contact
 
-For questions or collaboration opportunities, you can connect via the repository owner profile on GitHub.
+For questions or collaboration, please use the repository owner profile on GitHub.
