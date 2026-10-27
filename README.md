@@ -30,14 +30,14 @@ DMart-Sales-Dashboard/
 ├── Dataset/
 │   ├── DMart.csv
 │   └── DMart_Grocery_Sales_-_Retail_Analytics_Dataset.csv
-├── Retail_Sales_Analytics.pbix
+├── DMart Sales Dashboard.pbix
 ├── README.md
 └── .gitignore
 ```
 
 ### Files
 
-- `Retail_Sales_Analytics.pbix` — Power BI report/dashboard file
+- `DMart Sales Dashboard.pbix` — Power BI report/dashboard file
 - `Dataset/DMart.csv` — DMart sales dataset
 - `Dataset/DMart_Grocery_Sales_-_Retail_Analytics_Dataset.csv` — main retail analytics dataset used for sales analysis
 
@@ -85,7 +85,7 @@ The Power BI dashboard is intended to visualize:
 
 ## How to Use
 
-1. Open `Retail_Sales_Analytics.pbix` in Power BI Desktop.
+1. Open `DMart Sales Dashboard.pbix` in Power BI Desktop.
 2. Confirm the dataset file path points to the CSV data in the `Dataset/` folder.
 3. Refresh the data model if prompted.
 4. Use the dashboard visuals to explore sales, profit, and category performance.
